@@ -6,6 +6,36 @@
 
 A production-ready machine learning system for diabetes risk prediction, featuring a clean architecture, comprehensive testing, and REST API integration.
 
+## ⚙️ Setup and Installation
+
+1. **Navigate to the ML directory:**
+   ```bash
+   cd Diabetes-Prediction
+   ```
+
+2. **Create and activate a virtual environment (recommended):**
+   ```bash
+   python -m venv venv
+   
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the API server:**
+   ```bash
+   python main.py
+   # or
+   python predict_api.py
+   ```
+   *(Check `main.py` or `predict_api.py` for exact FastAPI/Flask running instructions).*
+
 ## 🎯 Problem Statement
 
 **Objective:** Predict diabetes risk in patients based on diagnostic measurements to enable early intervention and preventive care.
