@@ -1,0 +1,122 @@
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useAuthStore } from '../store/authStore';
+import { HomeIcon, CalendarIcon, UserIcon, UsersIcon, FileTextIcon, UploadIcon, ClockIcon, ActivityIcon, CreditCardIcon, BarChartIcon, FileIcon, Settings2Icon, ShieldIcon, Brain } from 'lucide-react';
+const Sidebar = () => {
+  const location = useLocation();
+  const {
+    user
+  } = useAuthStore();
+  const isActive = path => {
+    return location.pathname === path;
+  };
+  // Navigation items based on user role
+  const getNavItems = () => {
+    switch (user?.role) {      case 'patient':
+        return [{
+          name: 'Dashboard',
+          path: '/patient',
+          icon: <HomeIcon className="w-5 h-5" />
+        }, {
+          name: 'Book Appointment',
+          path: '/patient/book-appointment',
+          icon: <CalendarIcon className="w-5 h-5" />        }, {
+          name: 'My Appointments',
+          path: '/patient/my-appointments',
+          icon: <CalendarIcon className="w-5 h-5" />
+        }, {
+          name: 'Medical Reports',
+          path: '/patient/medical-reports',
+          icon: <FileTextIcon className="w-5 h-5" />
+        }, {
+          name: 'View Queue',
+          path: '/patient/queue',
+          icon: <ClockIcon className="w-5 h-5" />
+        }, {
+          name: 'Health Predictions',
+          path: '/patient/health-predictions',
+          icon: <ActivityIcon className="w-5 h-5" />
+        }];case 'doctor':
+        return [{
+          name: 'Dashboard',
+          path: '/doctor',
+          icon: <HomeIcon className="w-5 h-5" />
+        }, {
+          name: 'My Patients',
+          path: '/doctor/patients',
+          icon: <UsersIcon className="w-5 h-5" />
+        }, {
+          name: 'Appointments',
+          path: '/doctor/appointments',
+          icon: <CalendarIcon className="w-5 h-5" />
+        }, {
+          name: 'Manage Queue',
+          path: '/doctor/queue',
+          icon: <ClockIcon className="w-5 h-5" />        }, {
+          name: 'AI Predictions',
+          path: '/doctor/ai-predictions',
+          icon: <ActivityIcon className="w-5 h-5" />
+        }];case 'admin':
+        return [{
+          name: 'Dashboard',
+          path: '/admin',
+          icon: <HomeIcon className="w-5 h-5" />
+        }, {
+          name: 'Manage Patients',
+          path: '/admin/patients',
+          icon: <UsersIcon className="w-5 h-5" />
+        }, {
+          name: 'Manage Doctors',
+          path: '/admin/doctors',
+          icon: <UserIcon className="w-5 h-5" />
+        }, {
+          name: 'Appointments',
+          path: '/admin/appointments',
+          icon: <CalendarIcon className="w-5 h-5" />
+        }, {
+          name: 'Health Predictions',
+          path: '/admin/health-predictions',
+          icon: <Brain className="w-5 h-5" />
+        }, {
+          name: 'Upload Reports',
+          path: '/admin/reports',
+          icon: <UploadIcon className="w-5 h-5" />
+        }];
+      case 'billing':
+        return [{
+          name: 'Dashboard',
+          path: '/billing',
+          icon: <HomeIcon className="w-5 h-5" />
+        }, {
+          name: 'Invoices',
+          path: '/billing/invoices',
+          icon: <FileTextIcon className="w-5 h-5" />        }, {
+          name: 'Insurance Claims',
+          path: '/billing/insurance-claims',
+          icon: <ShieldIcon className="w-5 h-5" />
+        }, {
+          name: 'Analytics',
+          path: '/billing/analytics',
+          icon: <BarChartIcon className="w-5 h-5" />
+        }];
+      default:
+        return [];
+    }
+  };
+  const navItems = getNavItems();
+  return <aside className="hidden md:flex md:flex-col md:w-64 bg-gradient-to-b from-blue-50 via-sky-50 to-indigo-50 border-r border-blue-200 shadow-lg">
+      <div className="flex items-center justify-center h-16 border-b border-blue-200 bg-gradient-to-r from-blue-600 to-indigo-600">
+        <ActivityIcon className="text-white h-6 w-6 mr-2" />
+        <span className="text-xl font-bold text-white tracking-tight">PulseLink</span>
+      </div>
+      <div className="flex flex-col flex-grow p-4 overflow-y-auto">
+        <div className="space-y-2">
+          {navItems.map(item => <Link key={item.path} to={item.path} className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg group transition-all duration-200 ${isActive(item.path) ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-md transform scale-105' : 'text-blue-800 hover:bg-gradient-to-r hover:from-blue-100 hover:to-indigo-100 hover:text-blue-900 hover:shadow-sm'}`}>
+              <span className="mr-3">{item.icon}</span>
+              {item.name}
+            </Link>)}
+        </div>
+      </div>
+    </aside>;
+};
+export default Sidebar;

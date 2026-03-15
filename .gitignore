@@ -1,0 +1,12 @@
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.env
+**/.env
+.vite/
+**/.vite/
+build.log
+**/build.log
+__pycache__/
+**/__pycache__/
