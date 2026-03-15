@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Machine Learning specific
+# Prevent committing large model files
+*.pkl
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.pb
+models/*.pkl
+models/*.h5
+models/*.pt
+
+# Large datasets
+datasets/*.csv
+datasets/*.json
+datasets/*.parquet
+data/*.csv
+data/*.json
+*.csv
+*.tsv
+*.parquet
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+test-results/
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Old structure (if needed during migration)
+test*
+/pages/
+pages
+.command/
+.command
