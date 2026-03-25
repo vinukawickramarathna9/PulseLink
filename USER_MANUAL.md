@@ -101,7 +101,9 @@ This module provides the prediction endpoints.
    ```
 3. Run the API (usually Flask/FastAPI based):
    ```bash
-   python predict_api.py
+   cd g:\PulseLink\Diabetes-Prediction
+   .\.venv\Scripts\Activate.ps1
+   streamlit run main.py
    ```
    *(Check `Diabetes-Prediction/README.md` for specific ML training instructions.)*
 

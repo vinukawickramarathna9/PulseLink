@@ -38309,3 +38309,236 @@
 2026-03-25 22:14:50 [INFO]: ::1 - - [25/Mar/2026:16:44:50 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
 2026-03-25 22:14:54 [INFO]: ::1 - - [25/Mar/2026:16:44:54 +0000] "GET /api/insurance-claims HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
 2026-03-25 22:14:55 [INFO]: ::1 - - [25/Mar/2026:16:44:55 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:17:27 [INFO]: Socket.IO server initialized
+2026-03-25 22:17:28 [INFO]: ✅ MySQL database connected successfully
+2026-03-25 22:17:28 [INFO]: ✅ MySQL connected successfully
+2026-03-25 22:17:28 [ERROR]: ❌ MongoDB connection failed:
+2026-03-25 22:17:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2026-03-25 22:17:28 [INFO]: 📧 Notification service skipped for now
+2026-03-25 22:17:28 [INFO]: 🚀 Server running on port 5000
+2026-03-25 22:17:28 [INFO]: 📊 Environment: development
+2026-03-25 22:17:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2026-03-25 22:17:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2026-03-25 22:22:10 [INFO]: Socket.IO server initialized
+2026-03-25 22:22:12 [INFO]: ✅ MySQL database connected successfully
+2026-03-25 22:22:12 [INFO]: ✅ MySQL connected successfully
+2026-03-25 22:22:12 [ERROR]: ❌ MongoDB connection failed:
+2026-03-25 22:22:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2026-03-25 22:22:12 [INFO]: 📧 Notification service skipped for now
+2026-03-25 22:22:12 [ERROR]: Port 5000 in use, trying 5001
+2026-03-25 22:22:12 [INFO]: 🚀 Server running on port 5000
+2026-03-25 22:22:12 [INFO]: 📊 Environment: development
+2026-03-25 22:22:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2026-03-25 22:22:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2026-03-25 22:32:06 [INFO]: User logged in: admin@gmail.com
+2026-03-25 22:32:06 [INFO]: ::1 - - [25/Mar/2026:17:02:06 +0000] "POST /api/auth/login HTTP/1.1" 200 824 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:10 [INFO]: Token decoded successfully
+2026-03-25 22:32:10 [INFO]: Querying user from database
+2026-03-25 22:32:10 [INFO]: Token decoded successfully
+2026-03-25 22:32:10 [INFO]: Querying user from database
+2026-03-25 22:32:10 [INFO]: User found
+2026-03-25 22:32:10 [INFO]: Authorization check
+2026-03-25 22:32:10 [INFO]: Authorization successful
+2026-03-25 22:32:10 [INFO]: Token decoded successfully
+2026-03-25 22:32:10 [INFO]: Querying user from database
+2026-03-25 22:32:10 [INFO]: User found
+2026-03-25 22:32:10 [INFO]: Authorization check
+2026-03-25 22:32:10 [INFO]: Authorization successful
+2026-03-25 22:32:10 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:32:10 [INFO]: ✅ [ADMIN] Retrieved 6 patient submissions
+2026-03-25 22:32:10 [INFO]: ::1 - - [25/Mar/2026:17:02:10 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:10 [INFO]: User found
+2026-03-25 22:32:10 [INFO]: Authorization check
+2026-03-25 22:32:10 [INFO]: Authorization successful
+2026-03-25 22:32:10 [INFO]: Token decoded successfully
+2026-03-25 22:32:10 [INFO]: Querying user from database
+2026-03-25 22:32:11 [INFO]: User found
+2026-03-25 22:32:11 [INFO]: Authorization check
+2026-03-25 22:32:11 [INFO]: Authorization successful
+2026-03-25 22:32:11 [INFO]: 📊 [ADMIN] Getting admin dashboard for: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:32:11 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2026-03-25 22:32:11 [INFO]: ::1 - - [25/Mar/2026:17:02:11 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:20 [INFO]: Token decoded successfully
+2026-03-25 22:32:20 [INFO]: Querying user from database
+2026-03-25 22:32:20 [INFO]: Token decoded successfully
+2026-03-25 22:32:20 [INFO]: Querying user from database
+2026-03-25 22:32:20 [INFO]: User found
+2026-03-25 22:32:20 [INFO]: Authorization check
+2026-03-25 22:32:20 [INFO]: Authorization successful
+2026-03-25 22:32:20 [INFO]: Token decoded successfully
+2026-03-25 22:32:20 [INFO]: Querying user from database
+2026-03-25 22:32:20 [INFO]: User found
+2026-03-25 22:32:20 [INFO]: Authorization check
+2026-03-25 22:32:20 [INFO]: Authorization successful
+2026-03-25 22:32:20 [INFO]: Token decoded successfully
+2026-03-25 22:32:20 [INFO]: Querying user from database
+2026-03-25 22:32:20 [INFO]: User found
+2026-03-25 22:32:20 [INFO]: Authorization check
+2026-03-25 22:32:20 [INFO]: Authorization successful
+2026-03-25 22:32:20 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:32:20 [INFO]: User found
+2026-03-25 22:32:20 [INFO]: Authorization check
+2026-03-25 22:32:20 [INFO]: Authorization successful
+2026-03-25 22:32:20 [INFO]: 📊 [ADMIN] Getting admin dashboard for: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:32:21 [INFO]: ✅ [ADMIN] Retrieved 6 patient submissions
+2026-03-25 22:32:21 [INFO]: ::1 - - [25/Mar/2026:17:02:21 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:21 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2026-03-25 22:32:21 [INFO]: ::1 - - [25/Mar/2026:17:02:21 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:32 [INFO]: User logged in: patient1@gmail.com
+2026-03-25 22:32:32 [INFO]: ::1 - - [25/Mar/2026:17:02:32 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:34 [INFO]: Token decoded successfully
+2026-03-25 22:32:34 [INFO]: Querying user from database
+2026-03-25 22:32:34 [INFO]: Token decoded successfully
+2026-03-25 22:32:34 [INFO]: Querying user from database
+2026-03-25 22:32:34 [INFO]: User found
+2026-03-25 22:32:34 [INFO]: Authorization check
+2026-03-25 22:32:34 [INFO]: Authorization successful
+2026-03-25 22:32:34 [INFO]: Token decoded successfully
+2026-03-25 22:32:34 [INFO]: Querying user from database
+2026-03-25 22:32:34 [INFO]: User found
+2026-03-25 22:32:34 [INFO]: Authorization check
+2026-03-25 22:32:34 [INFO]: Authorization successful
+2026-03-25 22:32:34 [INFO]: Token decoded successfully
+2026-03-25 22:32:34 [INFO]: Querying user from database
+2026-03-25 22:32:34 [INFO]: User found
+2026-03-25 22:32:34 [INFO]: Authorization check
+2026-03-25 22:32:34 [INFO]: Authorization successful
+2026-03-25 22:32:34 [INFO]: User found
+2026-03-25 22:32:34 [INFO]: Authorization check
+2026-03-25 22:32:34 [INFO]: Authorization successful
+2026-03-25 22:32:34 [INFO]: ::1 - - [25/Mar/2026:17:02:34 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 231 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:34 [INFO]: ::1 - - [25/Mar/2026:17:02:34 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:44 [INFO]: Token decoded successfully
+2026-03-25 22:32:44 [INFO]: Querying user from database
+2026-03-25 22:32:44 [INFO]: User found
+2026-03-25 22:32:44 [INFO]: Authorization check
+2026-03-25 22:32:44 [INFO]: Authorization successful
+2026-03-25 22:32:44 [INFO]: Token decoded successfully
+2026-03-25 22:32:44 [INFO]: Querying user from database
+2026-03-25 22:32:44 [INFO]: User found
+2026-03-25 22:32:44 [INFO]: Authorization check
+2026-03-25 22:32:44 [INFO]: Authorization successful
+2026-03-25 22:32:45 [INFO]: ::1 - - [25/Mar/2026:17:02:45 +0000] "POST /api/patient/health-predictions HTTP/1.1" 201 547 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:45 [INFO]: Token decoded successfully
+2026-03-25 22:32:45 [INFO]: Querying user from database
+2026-03-25 22:32:45 [INFO]: Token decoded successfully
+2026-03-25 22:32:45 [INFO]: Querying user from database
+2026-03-25 22:32:45 [INFO]: User found
+2026-03-25 22:32:45 [INFO]: Authorization check
+2026-03-25 22:32:45 [INFO]: Authorization successful
+2026-03-25 22:32:45 [INFO]: Token decoded successfully
+2026-03-25 22:32:45 [INFO]: Querying user from database
+2026-03-25 22:32:45 [INFO]: User found
+2026-03-25 22:32:45 [INFO]: Authorization check
+2026-03-25 22:32:45 [INFO]: Authorization successful
+2026-03-25 22:32:45 [INFO]: Token decoded successfully
+2026-03-25 22:32:45 [INFO]: Querying user from database
+2026-03-25 22:32:45 [INFO]: User found
+2026-03-25 22:32:45 [INFO]: Authorization check
+2026-03-25 22:32:45 [INFO]: Authorization successful
+2026-03-25 22:32:45 [INFO]: User found
+2026-03-25 22:32:45 [INFO]: Authorization check
+2026-03-25 22:32:45 [INFO]: Authorization successful
+2026-03-25 22:32:45 [INFO]: ::1 - - [25/Mar/2026:17:02:45 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 231 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:45 [INFO]: ::1 - - [25/Mar/2026:17:02:45 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:32:58 [INFO]: User logged in: admin@gmail.com
+2026-03-25 22:32:58 [INFO]: ::1 - - [25/Mar/2026:17:02:58 +0000] "POST /api/auth/login HTTP/1.1" 200 824 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:33:01 [INFO]: Token decoded successfully
+2026-03-25 22:33:01 [INFO]: Querying user from database
+2026-03-25 22:33:01 [INFO]: Token decoded successfully
+2026-03-25 22:33:01 [INFO]: Querying user from database
+2026-03-25 22:33:01 [INFO]: User found
+2026-03-25 22:33:01 [INFO]: Authorization check
+2026-03-25 22:33:01 [INFO]: Authorization successful
+2026-03-25 22:33:01 [INFO]: Token decoded successfully
+2026-03-25 22:33:01 [INFO]: Querying user from database
+2026-03-25 22:33:01 [INFO]: User found
+2026-03-25 22:33:01 [INFO]: Authorization check
+2026-03-25 22:33:01 [INFO]: Authorization successful
+2026-03-25 22:33:01 [INFO]: Token decoded successfully
+2026-03-25 22:33:01 [INFO]: Querying user from database
+2026-03-25 22:33:01 [INFO]: User found
+2026-03-25 22:33:01 [INFO]: Authorization check
+2026-03-25 22:33:01 [INFO]: Authorization successful
+2026-03-25 22:33:01 [INFO]: 📊 [ADMIN] Getting admin dashboard for: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:33:01 [INFO]: User found
+2026-03-25 22:33:01 [INFO]: Authorization check
+2026-03-25 22:33:01 [INFO]: Authorization successful
+2026-03-25 22:33:01 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:33:01 [INFO]: ✅ [ADMIN] Retrieved 7 patient submissions
+2026-03-25 22:33:01 [INFO]: ::1 - - [25/Mar/2026:17:03:01 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:33:01 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2026-03-25 22:33:01 [INFO]: ::1 - - [25/Mar/2026:17:03:01 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:33:09 [INFO]: Token decoded successfully
+2026-03-25 22:33:09 [INFO]: Querying user from database
+2026-03-25 22:33:09 [INFO]: User found
+2026-03-25 22:33:09 [INFO]: Authorization check
+2026-03-25 22:33:09 [INFO]: Authorization successful
+2026-03-25 22:33:09 [INFO]: Token decoded successfully
+2026-03-25 22:33:09 [INFO]: Querying user from database
+2026-03-25 22:33:09 [INFO]: User found
+2026-03-25 22:33:09 [INFO]: Authorization check
+2026-03-25 22:33:09 [INFO]: Authorization successful
+2026-03-25 22:33:09 [INFO]: 🤖 [ADMIN] Processing patient submission with AI: 7d12f491-275b-44fb-b364-97bb6d15cd46 by admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:33:09 [INFO]: 📊 [ADMIN] Sending data to diabetes prediction service:
+2026-03-25 22:33:28 [INFO]: 🎯 [ADMIN] Diabetes prediction service response:
+2026-03-25 22:33:29 [INFO]: ✅ [ADMIN] Successfully processed submission 7d12f491-275b-44fb-b364-97bb6d15cd46 with AI prediction
+2026-03-25 22:33:29 [INFO]: ::1 - - [25/Mar/2026:17:03:29 +0000] "POST /api/admin/health-predictions/7d12f491-275b-44fb-b364-97bb6d15cd46/process HTTP/1.1" 200 743 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:33:29 [INFO]: Token decoded successfully
+2026-03-25 22:33:29 [INFO]: Querying user from database
+2026-03-25 22:33:29 [INFO]: Token decoded successfully
+2026-03-25 22:33:29 [INFO]: Querying user from database
+2026-03-25 22:33:29 [INFO]: User found
+2026-03-25 22:33:29 [INFO]: Authorization check
+2026-03-25 22:33:29 [INFO]: Authorization successful
+2026-03-25 22:33:29 [INFO]: Token decoded successfully
+2026-03-25 22:33:29 [INFO]: Querying user from database
+2026-03-25 22:33:29 [INFO]: User found
+2026-03-25 22:33:29 [INFO]: Authorization check
+2026-03-25 22:33:29 [INFO]: Authorization successful
+2026-03-25 22:33:29 [INFO]: Token decoded successfully
+2026-03-25 22:33:29 [INFO]: Querying user from database
+2026-03-25 22:33:29 [INFO]: User found
+2026-03-25 22:33:29 [INFO]: Authorization check
+2026-03-25 22:33:29 [INFO]: Authorization successful
+2026-03-25 22:33:29 [INFO]: 📊 [ADMIN] Getting admin dashboard for: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:33:29 [INFO]: User found
+2026-03-25 22:33:29 [INFO]: Authorization check
+2026-03-25 22:33:29 [INFO]: Authorization successful
+2026-03-25 22:33:29 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2026-03-25 22:33:29 [INFO]: ✅ [ADMIN] Retrieved 7 patient submissions
+2026-03-25 22:33:29 [INFO]: ::1 - - [25/Mar/2026:17:03:29 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:33:29 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2026-03-25 22:33:29 [INFO]: ::1 - - [25/Mar/2026:17:03:29 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:33:47 [INFO]: User logged in: doctor@gmail.com
+2026-03-25 22:33:47 [INFO]: ::1 - - [25/Mar/2026:17:03:47 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:33:49 [INFO]: Token decoded successfully
+2026-03-25 22:33:49 [INFO]: Querying user from database
+2026-03-25 22:33:49 [INFO]: User found
+2026-03-25 22:33:49 [INFO]: Authorization check
+2026-03-25 22:33:49 [INFO]: Authorization successful
+2026-03-25 22:33:49 [INFO]: ::1 - - [25/Mar/2026:17:03:49 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:34:15 [INFO]: User logged in: patient1@gmail.com
+2026-03-25 22:34:15 [INFO]: ::1 - - [25/Mar/2026:17:04:15 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:34:17 [INFO]: Token decoded successfully
+2026-03-25 22:34:17 [INFO]: Querying user from database
+2026-03-25 22:34:17 [INFO]: Token decoded successfully
+2026-03-25 22:34:17 [INFO]: Querying user from database
+2026-03-25 22:34:17 [INFO]: User found
+2026-03-25 22:34:17 [INFO]: Authorization check
+2026-03-25 22:34:17 [INFO]: Authorization successful
+2026-03-25 22:34:17 [INFO]: Token decoded successfully
+2026-03-25 22:34:17 [INFO]: Querying user from database
+2026-03-25 22:34:17 [INFO]: User found
+2026-03-25 22:34:17 [INFO]: Authorization check
+2026-03-25 22:34:17 [INFO]: Authorization successful
+2026-03-25 22:34:17 [INFO]: Token decoded successfully
+2026-03-25 22:34:17 [INFO]: Querying user from database
+2026-03-25 22:34:17 [INFO]: User found
+2026-03-25 22:34:17 [INFO]: Authorization check
+2026-03-25 22:34:17 [INFO]: Authorization successful
+2026-03-25 22:34:17 [INFO]: User found
+2026-03-25 22:34:17 [INFO]: Authorization check
+2026-03-25 22:34:17 [INFO]: Authorization successful
+2026-03-25 22:34:17 [INFO]: ::1 - - [25/Mar/2026:17:04:17 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-25 22:34:17 [INFO]: ::1 - - [25/Mar/2026:17:04:17 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 231 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
