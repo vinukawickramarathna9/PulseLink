@@ -253,7 +253,7 @@ const GenerateInvoiceModal: React.FC<GenerateInvoiceModalProps> = ({
                                     <li
                                         key={p.id}
                                         className="relative cursor-pointer select-none py-2 pl-3 pr-9 text-gray-900 hover:bg-blue-50"
-                                        onClick={() => {
+                                        onMouseDown={() => {
                                             handleInputChange('patientName', p.name);
                                             setShowDropdown(false);
                                         }}

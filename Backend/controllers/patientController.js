@@ -320,7 +320,7 @@ class PatientController {
         data: {
           patient: {
             id: patient.id,
-            name: `${patient.first_name} ${patient.last_name}`,
+            name: req.user.name,
             next_appointment: upcomingAppointments[0] || null
           },
           upcomingAppointments,
