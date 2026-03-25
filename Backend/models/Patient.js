@@ -232,6 +232,52 @@ class Patient {
     return null;
   }
 
+  // Get recent health metrics (mock)
+  static async getRecentHealthMetrics(patientId, limit = 5) {
+    // In the future: query against patient_health_metrics table
+    return [];
+  }
+
+  // Add health metric (mock)
+  static async addHealthMetric(patientId, data) {
+    return { id: `hm_${Date.now()}`, patient_id: patientId, ...data, created_at: new Date() };
+  }
+
+  // Get health metrics (mock)
+  static async getHealthMetrics(patientId, options = {}) {
+    return [];
+  }
+
+  // Get pending reports
+  static async getPendingReports(patientId) {
+    try {
+      const query = `
+        SELECT * FROM medical_reports 
+        WHERE patient_id = ? AND status = 'pending'
+      `;
+      return await mysqlConnection.query(query, [patientId]);
+    } catch (e) {
+      // Return empty if table is missing or errors
+      return [];
+    }
+  }
+
+  // Get medical reports
+  static async getMedicalReports(patientId, options = {}) {
+    try {
+      const { limit = 20 } = options;
+      const query = `
+        SELECT * FROM medical_reports 
+        WHERE patient_id = ?
+        ORDER BY created_at DESC
+        LIMIT ?
+      `;
+      return await mysqlConnection.query(query, [patientId, limit]);
+    } catch (e) {
+      return [];
+    }
+  }
+
   // Get age
   getAge() {
     if (this.date_of_birth) {
