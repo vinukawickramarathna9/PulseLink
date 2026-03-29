@@ -5266,3 +5266,4 @@
 2026-03-25 22:17:28 [ERROR]: ❌ MongoDB connection failed:
 2026-03-25 22:22:12 [ERROR]: ❌ MongoDB connection failed:
 2026-03-25 22:22:12 [ERROR]: Port 5000 in use, trying 5001
+2026-03-30 00:11:11 [ERROR]: ❌ MongoDB connection failed:
